@@ -12,11 +12,15 @@ For this task you are given three variables:
 
 - `response` — begins uninitialized, but is later used to store a response that will be printed to the output panel.
 
+<br>
 
 You need to create an `if...else` structure that checks whether the machine is switched on and puts a message into the response variable if it isn't, telling the user to switch the machine on.
 
+<br>
 
 Inside the first `if...else`, you need to nest another `if...else` that puts appropriate messages into the response variable depending on what the value of score is — if the machine is turned on. The different conditional tests (and resulting responses) are as follows:
+
+<br>
 
 - Score of less than 0 or more than 100 — "This is not possible, an error has occurred."
 
@@ -29,5 +33,7 @@ Inside the first `if...else`, you need to nest another `if...else` that puts app
 - Score of 70 to 89 — "That\'s a great score, you really know your stuff."
 
 - Score of 90 to 100 — "What an amazing score! Did you cheat? Are you for real?"
+
+<br>
 
 After you've entered your code, try changing `machineActive` to `true`, to see if it works.
