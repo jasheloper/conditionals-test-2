@@ -25,15 +25,12 @@
   
   <script>
     let response;
-    let score = 79;
-    let machineActive = false;
+    let score = 100;
+    let machineActive = true;
   
     // Add your code here
 
-     if (machineActive === false) {
-        response = "Switch the machine to ON, to see a new message."
-
-     } else if (machineActive === true) {
+      if (machineActive) {
         if (score < 0 || score > 100) {
             response = "This is not possible, an error has occurred."
 
@@ -52,6 +49,8 @@
         } else if (score >= 90 && score <= 100) {
             response = "What an amazing score! Did you cheat? Are you for real?"
         }
+     } else {
+            response = "Switch the machine to ON, to see a new message."
      }
 
     // Don't edit the code below here!

@@ -44,10 +44,13 @@ After you've entered your code, try changing `machineActive` to `true`, to see i
 ```
 // Add your code here
 
-     if (machineActive === false) {
-        response = "Switch the machine to ON, to see a new message."
+    let response;
+    let score = 100;
+    let machineActive = true;
+  
+    // Add your code here
 
-     } else if (machineActive === true) {
+      if (machineActive) {
         if (score < 0 || score > 100) {
             response = "This is not possible, an error has occurred."
 
@@ -66,5 +69,7 @@ After you've entered your code, try changing `machineActive` to `true`, to see i
         } else if (score >= 90 && score <= 100) {
             response = "What an amazing score! Did you cheat? Are you for real?"
         }
+     } else {
+            response = "Switch the machine to ON, to see a new message."
      }
 ```
